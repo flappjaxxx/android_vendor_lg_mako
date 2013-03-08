@@ -54,7 +54,7 @@ PrintVersion() {
 }
 
 160dpi() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 /system/xbin/sed -i 's/ro.sf.lcd_density=320/ro.sf.lcd_density=160/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=280/ro.sf.lcd_density=160/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=260/ro.sf.lcd_density=160/g' /system/build.prop
@@ -67,12 +67,12 @@ mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
 /system/xbin/sed -i 's/ro.sf.lcd_density=192/ro.sf.lcd_density=160/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=190/ro.sf.lcd_density=160/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=180/ro.sf.lcd_density=160/g' /system/build.prop
-mount -o ro,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,ro /system
 echo LCD Density set to 160dpi, -Tiny Tablet Mode- Reboot to Activate!
 }
 
 180dpi() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 /system/xbin/sed -i 's/ro.sf.lcd_density=320/ro.sf.lcd_density=180/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=280/ro.sf.lcd_density=180/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=260/ro.sf.lcd_density=180/g' /system/build.prop
@@ -85,12 +85,12 @@ mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
 /system/xbin/sed -i 's/ro.sf.lcd_density=192/ro.sf.lcd_density=180/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=190/ro.sf.lcd_density=180/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=160/ro.sf.lcd_density=180/g' /system/build.prop
-mount -o ro,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,ro /system
 echo LCD Density set to 180dpi, Reboot to Activate!
 }
 
 190dpi() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 /system/xbin/sed -i 's/ro.sf.lcd_density=320/ro.sf.lcd_density=190/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=280/ro.sf.lcd_density=190/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=260/ro.sf.lcd_density=190/g' /system/build.prop
@@ -103,12 +103,12 @@ mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
 /system/xbin/sed -i 's/ro.sf.lcd_density=192/ro.sf.lcd_density=190/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=180/ro.sf.lcd_density=190/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=160/ro.sf.lcd_density=190/g' /system/build.prop
-mount -o ro,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,ro /system
 echo LCD Density set to 190dpi, Reboot to Activate!
 }
 
 192dpi() {
-  mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+  mount -o remount,rw /system
 /system/xbin/sed -i 's/ro.sf.lcd_density=320/ro.sf.lcd_density=192/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=280/ro.sf.lcd_density=192/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=260/ro.sf.lcd_density=192/g' /system/build.prop
@@ -121,12 +121,12 @@ echo LCD Density set to 190dpi, Reboot to Activate!
 /system/xbin/sed -i 's/ro.sf.lcd_density=190/ro.sf.lcd_density=192/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=180/ro.sf.lcd_density=192/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=160/ro.sf.lcd_density=192/g' /system/build.prop
-mount -o ro,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,ro /system
 echo LCD Density set to 192dpi, Reboot to Activate!
 }
 
 200dpi() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 /system/xbin/sed -i 's/ro.sf.lcd_density=320/ro.sf.lcd_density=200/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=280/ro.sf.lcd_density=200/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=260/ro.sf.lcd_density=200/g' /system/build.prop
@@ -139,12 +139,12 @@ mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
 /system/xbin/sed -i 's/ro.sf.lcd_density=192/ro.sf.lcd_density=200/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=180/ro.sf.lcd_density=200/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=160/ro.sf.lcd_density=200/g' /system/build.prop
-mount -o ro,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,ro /system
 echo LCD Density set to 200dpi, Reboot to Activate!
 }
 
 210dpi() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 /system/xbin/sed -i 's/ro.sf.lcd_density=320/ro.sf.lcd_density=210/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=280/ro.sf.lcd_density=210/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=260/ro.sf.lcd_density=210/g' /system/build.prop
@@ -157,12 +157,12 @@ mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
 /system/xbin/sed -i 's/ro.sf.lcd_density=192/ro.sf.lcd_density=210/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=180/ro.sf.lcd_density=210/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=160/ro.sf.lcd_density=210/g' /system/build.prop
-mount -o ro,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,ro /system
 echo LCD Density set to 210dpi, Reboot to Activate!
 }
 
 213dpi() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 /system/xbin/sed -i 's/ro.sf.lcd_density=320/ro.sf.lcd_density=213/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=280/ro.sf.lcd_density=213/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=260/ro.sf.lcd_density=213/g' /system/build.prop
@@ -174,12 +174,12 @@ mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
 /system/xbin/sed -i 's/ro.sf.lcd_density=192/ro.sf.lcd_density=213/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=180/ro.sf.lcd_density=213/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=160/ro.sf.lcd_density=213/g' /system/build.prop
-mount -o ro,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,ro /system
 echo LCD Density set to 213dpi, Reboot to Activate!
 }
 
 220dpi() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 /system/xbin/sed -i 's/ro.sf.lcd_density=320/ro.sf.lcd_density=220/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=280/ro.sf.lcd_density=220/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=260/ro.sf.lcd_density=220/g' /system/build.prop
@@ -192,12 +192,12 @@ mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
 /system/xbin/sed -i 's/ro.sf.lcd_density=192/ro.sf.lcd_density=220/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=180/ro.sf.lcd_density=220/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=160/ro.sf.lcd_density=220/g' /system/build.prop
-mount -o ro,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,ro /system
 echo LCD Density set to 220dpi, Reboot to Activate!
 }
 
 240dpi() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 /system/xbin/sed -i 's/ro.sf.lcd_density=320/ro.sf.lcd_density=240/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=280/ro.sf.lcd_density=240/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=260/ro.sf.lcd_density=240/g' /system/build.prop
@@ -210,12 +210,12 @@ mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
 /system/xbin/sed -i 's/ro.sf.lcd_density=192/ro.sf.lcd_density=240/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=180/ro.sf.lcd_density=240/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=160/ro.sf.lcd_density=240/g' /system/build.prop
-mount -o ro,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,ro /system
 echo LCD Density set to 240dpi, Reboot to Activate!
 }
 
 260dpi() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 /system/xbin/sed -i 's/ro.sf.lcd_density=320/ro.sf.lcd_density=260/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=280/ro.sf.lcd_density=260/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=240/ro.sf.lcd_density=260/g' /system/build.prop
@@ -228,12 +228,12 @@ mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
 /system/xbin/sed -i 's/ro.sf.lcd_density=192/ro.sf.lcd_density=260/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=180/ro.sf.lcd_density=260/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=160/ro.sf.lcd_density=260/g' /system/build.prop
-mount -o ro,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,ro /system
 echo LCD Density set to 260dpi, Reboot to Activate!
 }
 
 280dpi() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 /system/xbin/sed -i 's/ro.sf.lcd_density=320/ro.sf.lcd_density=280/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=260/ro.sf.lcd_density=280/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=240/ro.sf.lcd_density=280/g' /system/build.prop
@@ -246,12 +246,12 @@ mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
 /system/xbin/sed -i 's/ro.sf.lcd_density=192/ro.sf.lcd_density=280/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=180/ro.sf.lcd_density=280/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=160/ro.sf.lcd_density=280/g' /system/build.prop
-mount -o ro,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,ro /system
 echo LCD Density set to 280dpi, Reboot to Activate!
 }
 
 320dpi() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 /system/xbin/sed -i 's/ro.sf.lcd_density=280/ro.sf.lcd_density=320/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=260/ro.sf.lcd_density=320/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=240/ro.sf.lcd_density=320/g' /system/build.prop
@@ -264,7 +264,7 @@ mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
 /system/xbin/sed -i 's/ro.sf.lcd_density=192/ro.sf.lcd_density=320/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=180/ro.sf.lcd_density=320/g' /system/build.prop
 /system/xbin/sed -i 's/ro.sf.lcd_density=160/ro.sf.lcd_density=320/g' /system/build.prop
-mount -o ro,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,ro /system
 echo LCD Density set to 320dpi - Stock DPI, Reboot to Activate!
 }
 
@@ -293,7 +293,7 @@ wget "$URL"
   fi
 fi
 if [ "$GOOD" = "1" ]; then
-  mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+  mount -o remount,rw /system
   echo "Removing Old Config Files"
   rm  /system/etc/SuplRootCert
   rm  /system/etc/gps.conf
@@ -304,7 +304,7 @@ echo "Copy Config Files"
   cp gps.conf /system/etc/gps.conf
   cp SuplRootCert /system/etc/SuplRootCert
 echo "Cleaning up"
-    mount -o ro,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+    mount -o remount,ro /system
   cd - >/dev/null 2>&1
   echo "Done! Please Reboot to Activate ATT GPS Config"
 else
@@ -347,7 +347,7 @@ wget "$URL"
   fi
 fi
 if [ "$GOOD" = "1" ]; then
-  mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+  mount -o remount,rw /system
   echo "Removing Old Config Files"
   rm  /system/etc/SuplRootCert
   rm  /system/etc/gps.conf
@@ -358,7 +358,7 @@ echo "Copy Config Files"
   cp gps.conf /system/etc/gps.conf
   cp SuplRootCert /system/etc/SuplRootCert
 echo "Cleaning up"
-    mount -o ro,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+    mount -o remount,ro /system
   cd - >/dev/null 2>&1
   echo "Done! Please Reboot to Activate Generic GPS Config"
 else
@@ -401,7 +401,7 @@ wget "$URL"
   fi
 fi
 if [ "$GOOD" = "1" ]; then
-  mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+  mount -o remount,rw /system
   echo "Removing Old Config Files"
   rm  /system/etc/SuplRootCert
   rm  /system/etc/gps.conf
@@ -411,7 +411,7 @@ echo "Extracting Package"
 echo "Copy Config Files"
   cp gps.conf /system/etc/gps.conf
 echo "Cleaning up"
-    mount -o ro,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+    mount -o remount,ro /system
   cd - >/dev/null 2>&1
   echo "Done! Please Reboot to Activate Stock GPS Config"
 else
@@ -454,7 +454,7 @@ wget "$URL"
   fi
 fi
 if [ "$GOOD" = "1" ]; then
-  mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+  mount -o remount,rw /system
   echo "Removing Old Config Files"
   rm  /system/etc/SuplRootCert
   rm  /system/etc/gps.conf
@@ -465,7 +465,7 @@ echo "Copy Config Files"
   cp gps.conf /system/etc/gps.conf
   cp SuplRootCert /system/etc/SuplRootCert
   echo "Cleaning up"
-    mount -o ro,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+    mount -o remount,ro /system
   cd - >/dev/null 2>&1
   echo "Done! Please Reboot to Activate T-Mobile GPS Config"
 else
@@ -508,7 +508,7 @@ wget "$URL"
   fi
 fi
 if [ "$GOOD" = "1" ]; then
-  mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+  mount -o remount,rw /system
   echo "Removing Old Config Files"
   rm  /system/etc/SuplRootCert
   rm  /system/etc/gps.conf
@@ -518,7 +518,7 @@ echo "Extracting Package"
 echo "Copy Config Files"
   cp gps.conf /system/etc/gps.conf
 echo "Cleaning up"
-    mount -o ro,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+    mount -o remount,ro /system
   cd - >/dev/null 2>&1
   echo "Done! Please Reboot to Activate Worldwide 1.3 GPS Config"
 else
@@ -561,7 +561,7 @@ wget "$URL"
   fi
 fi
 if [ "$GOOD" = "1" ]; then
-  mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+  mount -o remount,rw /system
   echo "Removing Old Config Files"
   rm  /system/etc/SuplRootCert
   rm  /system/etc/gps.conf
@@ -571,7 +571,7 @@ echo "Extracting Package"
 echo "Copy Config Files"
   cp gps.conf /system/etc/gps.conf
 echo "Cleaning up"
-    mount -o ro,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+    mount -o remount,ro /system
   cd - >/dev/null 2>&1
   echo "Done! Please Reboot to Activate Worldwide Alternate GPS Config"
 else
@@ -590,20 +590,20 @@ fi
 }
 
 noadblock() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 rm /system/etc/hosts
 echo '127.0.0.1		    localhost' > /system/etc/hosts
 chmod 644 /system/etc/hosts
-mount -o ro,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,ro /system
 echo Restored stock hosts file
 echo Ad Blocking Disabled
 echo Reboot required!
 }
 
 rmsupl() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 rm  /system/etc/SuplRootCert
-mount -o ro,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,ro /system
 echo Removed SuplRootCert!
 }
 
@@ -613,11 +613,11 @@ cd /sdcard/tmp
 echo Downloading latest hosts file
 wget http://rootdev.org/i717/TU2/updates/hosts.txt
 echo Installing updated hosts file
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 cp -f hosts.txt /system/etc/hosts
 chmod 644 /system/etc/hosts
 rm /sdcard/tmp/hosts.txt
-mount -o ro,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,ro /system
 echo Installed Custom hosts file
 echo Ad Blocking Enabled
 echo Reboot required to apply changes!
@@ -625,9 +625,9 @@ echo Reboot required to apply changes!
 
 
 novalauncher() {
-FILE=NovaLauncher_1.3.3.apk
-MD5SUM=6a138ebedda38886725f30933338fdb6
-URL="http://rootdev.org/maguro/files/NovaLauncher_1.3.3.apk"
+FILE=NovaLauncher_2.0.1.apk
+MD5SUM=0a0a700976412f437ad648f99165eab5
+URL="http://rootdev.org/maguro/files/NovaLauncher_2.0.1.apk"
 if [ ! -d /sdcard/tmp ]; then
   MK=1
   mkdir -p /sdcard/tmp
@@ -650,7 +650,7 @@ echo "Downloading Package Be Patient"
 fi
 if [ "$GOOD" = "1" ]; then
 echo "Installing Nova Launcher"
-  pm install -r /sdcard/tmp/NovaLauncher_1.3.3.apk
+  pm install -r /sdcard/tmp/NovaLauncher_2.0.1.apk
   cd - >/dev/null 2>&1
   echo "Done! Enjoy NovaLauncher!"
 else
@@ -665,9 +665,9 @@ fi
 }
 
 apexlauncher() {
-FILE=ApexLauncher_v1.3.5.apk
-MD5SUM=046af082fae02c0494c7ffaf84f5548b
-URL="http://rootdev.org/maguro/files/ApexLauncher_v1.3.5.apk"
+FILE=ApexLauncher_v1.4.3.apk
+MD5SUM=56d3dcfc1957bff753f53045fbc34f4d
+URL="http://rootdev.org/maguro/files/ApexLauncher_v1.4.3.apk"
 if [ ! -d /sdcard/tmp ]; then
   MK=1
   mkdir -p /sdcard/tmp
@@ -690,7 +690,7 @@ echo "Downloading Package Be Patient"
 fi
 if [ "$GOOD" = "1" ]; then
 echo "Installing Apex Launcher"
-  pm install -r /sdcard/tmp/ApexLauncher_v1.3.5.apk
+  pm install -r /sdcard/tmp/ApexLauncher_v1.4.3.apk
   cd - >/dev/null 2>&1
   echo "Done! Enjoy Apex Launcher!"
 else
@@ -705,9 +705,9 @@ fi
 }
 
 netflixblk() {
-FILE=Netflix-Black-Rotation-v2.1.0.apk
-MD5SUM=6c8973710cdb07953233b672540828df
-URL="http://jdvhosting.com/flappjaxxxftp/Netflix-Black-Rotation-v2.1.0.apk"
+FILE=Netflix-Black-Rotation-v2.1.2.apk
+MD5SUM=71daa077010fdb3fcfd7770e446d868d
+URL="http://jdvhosting.com/flappjaxxxftp/Netflix-Black-Rotation-v2.1.2.apk"
 if [ ! -d /sdcard/tmp ]; then
   MK=1
   mkdir -p /sdcard/tmp
@@ -731,9 +731,9 @@ fi
 if [ "$GOOD" = "1" ]; then
 echo "Installing Netflix Black with Rotation Mods"
 cd /sdcard/tmp
-pm install -r Netflix-Black-Rotation-v2.1.0.apk
+pm install -r Netflix-Black-Rotation-v2.1.2.apk
 else
-  echo "Failed to download / install Netflix-Black-Rotation-v2.1.0"
+  echo "Failed to download / install Netflix-Black-Rotation-v2.1.2"
   exit 1
 fi
 rm  /sdcard/tmp/$FILE
@@ -764,157 +764,31 @@ echo "--Feature disabled for now--"
 }
 
 cwmrec6() {
-FILE=recovery-clockwork-6.0.1.5-maguro.img
-MD5SUM=3edfd5c8da7341c0aef581ed9436e84b
-URL="http://rootdev.org/maguro/files/recovery-clockwork-6.0.1.5-maguro.img"
-if [ ! -d /sdcard/download/rectmp ]; then
-  MK=1
-  mkdir -p /sdcard/download/rectmp
-fi
-cd /sdcard/download/rectmp
-if [ -f "$FILE" ]; then
-MD5=`md5sum $FILE | awk '{ print $1 }'`
-  if [ "$MD5" = "$MD5SUM" ]; then
-     GOOD=1
-  fi
-fi
-if [ "$GOOD" != "1" ]; then 
-echo "Downloading Package Be Patient"
-rm  "$FILE"
-wget "$URL"
-  MD5=`md5sum $FILE | awk '{ print $1 }'`
-  if [ "$MD5" = "$MD5SUM" ]; then
-     GOOD=1
-  fi
-fi
-if [ "$GOOD" = "1" ]; then
-  cd /sdcard/download/rectmp
-echo "Flashing Recovery"
-  cp recovery-clockwork-6.0.1.5-maguro.img /sdcard/recovery.img
-dd if=/sdcard/recovery.img of=/dev/block/mmcblk0p8
-echo "Cleaning up"
-  cd - >/dev/null 2>&1
-  echo "Done! Please Reboot and Enjoy CWM Recovery"
-else
-  echo "Failed to Install CWM Recovery"
-  echo "Try Again"
-  exit 1
-fi
-rm  /sdcard/recovery.img
-rm  /sdcard/download/rectmp/$FILE
-rm -R /sdcard/download/rectmp
-
-if [ "$MK" = "1" ]; then
-  rm -R /sdcard/download/rectmp 
-fi
+  echo "Work in Progress"
 }
 
 cwmtouch() {
-FILE=recovery-clockwork-touch-6.0.1.5-maguro.img
-MD5SUM=630084a3a16eee41f08191ff04e0d8f8
-URL="http://rootdev.org/maguro/files/recovery-clockwork-touch-6.0.1.5-maguro.img"
-if [ ! -d /sdcard/download/rectmp ]; then
-  MK=1
-  mkdir -p /sdcard/download/rectmp
-fi
-cd /sdcard/download/rectmp
-if [ -f "$FILE" ]; then
-MD5=`md5sum $FILE | awk '{ print $1 }'`
-  if [ "$MD5" = "$MD5SUM" ]; then
-     GOOD=1
-  fi
-fi
-if [ "$GOOD" != "1" ]; then 
-echo "Downloading Package Be Patient"
-rm  "$FILE"
-wget "$URL"
-  MD5=`md5sum $FILE | awk '{ print $1 }'`
-  if [ "$MD5" = "$MD5SUM" ]; then
-     GOOD=1
-  fi
-fi
-if [ "$GOOD" = "1" ]; then
-  cd /sdcard/download/rectmp
-echo "Flashing Recovery"
-  cp recovery-clockwork-touch-6.0.1.5-maguro.img /sdcard/recovery.img
-dd if=/sdcard/recovery.img of=/dev/block/mmcblk0p8
-echo "Cleaning up"
-  cd - >/dev/null 2>&1
-  echo "Done! Please Reboot and Enjoy CWM Touch Recovery"
-else
-  echo "Failed to Install CWM Touch Recovery"
-  echo "Try Again"
-  exit 1
-fi
-rm  /sdcard/recovery.img
-rm  /sdcard/download/rectmp/$FILE
-rm -R /sdcard/download/rectmp
-
-if [ "$MK" = "1" ]; then
-  rm -R /sdcard/download/rectmp 
-fi
+  echo "Work in Progress"
 }
 
 twrp() {
-FILE=openrecovery-twrp-2.3.2.1-maguro.img
-MD5SUM=3e223d92af7856dd799c4e69a76cf67b
-URL="http://rootdev.org/maguro/files/openrecovery-twrp-2.3.2.1-maguro.img"
-if [ ! -d /sdcard/download/rectmp ]; then
-  MK=1
-  mkdir -p /sdcard/download/rectmp
-fi
-cd /sdcard/download/rectmp
-if [ -f "$FILE" ]; then
-MD5=`md5sum $FILE | awk '{ print $1 }'`
-  if [ "$MD5" = "$MD5SUM" ]; then
-     GOOD=1
-  fi
-fi
-if [ "$GOOD" != "1" ]; then 
-echo "Downloading Package Be Patient"
-rm  "$FILE"
-wget "$URL"
-  MD5=`md5sum $FILE | awk '{ print $1 }'`
-  if [ "$MD5" = "$MD5SUM" ]; then
-     GOOD=1
-  fi
-fi
-if [ "$GOOD" = "1" ]; then
-  cd /sdcard/download/rectmp
-echo "Flashing Recovery"
-  cp openrecovery-twrp-2.3.2.1-maguro.img /sdcard/recovery.img
-dd if=/sdcard/recovery.img of=/dev/block/mmcblk0p8
-echo "Cleaning up"
-  cd - >/dev/null 2>&1
-  echo "Done! Please Reboot and Enjoy TWRP Recovery"
-else
-  echo "Failed to Install TWRP Recovery"
-  echo "Try Again"
-  exit 1
-fi
-rm  /sdcard/recovery.img
-rm  /sdcard/download/rectmp/$FILE
-rm -R /sdcard/download/rectmp
-
-if [ "$MK" = "1" ]; then
-  rm -R /sdcard/download/rectmp 
-fi
+  echo "Work in Progress"
 }
 
 192sleepmax() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '192000' > /system/etc/andrev_oc/sleep_max
 echo 'Tweaked' > /system/media/profile
 }
 
 192sleepmin() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '192000' > /system/etc/andrev_oc/sleep_min
 echo 'Tweaked' > /system/media/profile
 }
 
 192wakemax() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '192000' > /system/etc/andrev_oc/wake_max
 echo '192000' > /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
 echo 'Tweaked' > /system/media/profile
@@ -924,7 +798,7 @@ chmod 755 /system/etc/init.d/84fjwmax
 }
 
 192wakemin() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '192000' > /system/etc/andrev_oc/wake_min
 echo '192000' > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
 echo 'Tweaked' > /system/media/profile
@@ -934,19 +808,19 @@ chmod 755 /system/etc/init.d/84fjwmin
 }
 
 384sleepmax() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '384000' > /system/etc/andrev_oc/sleep_max
 echo 'Tweaked' > /system/media/profile
 }
 
 384sleepmin() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '384000' > /system/etc/andrev_oc/sleep_min
 echo 'Tweaked' > /system/media/profile
 }
 
 384wakemax() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '384000' > /system/etc/andrev_oc/wake_max
 echo '384000' > /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
 echo 'Tweaked' > /system/media/profile
@@ -956,7 +830,7 @@ chmod 755 /system/etc/init.d/84fjwmax
 }
 
 384wakemin() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '384000' > /system/etc/andrev_oc/wake_min
 echo '384000' > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
 echo 'Tweaked' > /system/media/profile
@@ -966,19 +840,19 @@ chmod 755 /system/etc/init.d/84fjwmin
 }
 
 486sleepmax() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '486000' > /system/etc/andrev_oc/sleep_max
 echo 'Tweaked' > /system/media/profile
 }
 
 486sleepmin() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '486000' > /system/etc/andrev_oc/sleep_min
 echo 'Tweaked' > /system/media/profile
 }
 
 486wakemax() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '486000' > /system/etc/andrev_oc/wake_max
 echo '486000' > /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
 echo 'Tweaked' > /system/media/profile
@@ -988,7 +862,7 @@ chmod 755 /system/etc/init.d/84fjwmax
 }
 
 486wakemin() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '486000' > /system/etc/andrev_oc/wake_min
 echo '486000' > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
 echo 'Tweaked' > /system/media/profile
@@ -998,19 +872,19 @@ chmod 755 /system/etc/init.d/84fjwmin
 }
 
 594sleepmax() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '594000' > /system/etc/andrev_oc/sleep_max
 echo 'Tweaked' > /system/media/profile
 }
 
 594sleepmin() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '594000' > /system/etc/andrev_oc/sleep_min
 echo 'Tweaked' > /system/media/profile
 }
 
 594wakemax() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '594000' > /system/etc/andrev_oc/wake_max
 echo '594000' > /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
 echo 'Tweaked' > /system/media/profile
@@ -1020,7 +894,7 @@ chmod 755 /system/etc/init.d/84fjwmax
 }
 
 594wakemin() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '594000' > /system/etc/andrev_oc/wake_min
 echo '594000' > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
 echo 'Tweaked' > /system/media/profile
@@ -1030,19 +904,19 @@ chmod 755 /system/etc/init.d/84fjwmin
 }
 
 702sleepmax() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '702000' > /system/etc/andrev_oc/sleep_max
 echo 'Tweaked' > /system/media/profile
 }
 
 702sleepmin() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '702000' > /system/etc/andrev_oc/sleep_min
 echo 'Tweaked' > /system/media/profile
 }
 
 702wakemax() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '702000' > /system/etc/andrev_oc/wake_max
 echo '702000' > /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
 echo 'Tweaked' > /system/media/profile
@@ -1052,7 +926,7 @@ chmod 755 /system/etc/init.d/84fjwmax
 }
 
 702wakemin() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '702000' > /system/etc/andrev_oc/wake_min
 echo '702000' > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
 echo 'Tweaked' > /system/media/profile
@@ -1062,19 +936,19 @@ chmod 755 /system/etc/init.d/84fjwmin
 }
 
 864sleepmax() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '864000' > /system/etc/andrev_oc/sleep_max
 echo 'Tweaked' > /system/media/profile
 }
 
 864sleepmin() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '864000' > /system/etc/andrev_oc/sleep_min
 echo 'Tweaked' > /system/media/profile
 }
 
 864wakemax() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '864000' > /system/etc/andrev_oc/wake_max
 echo '864000' > /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
 echo 'Tweaked' > /system/media/profile
@@ -1084,7 +958,7 @@ chmod 755 /system/etc/init.d/84fjwmax
 }
 
 864wakemin() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '864000' > /system/etc/andrev_oc/wake_min
 echo '864000' > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
 echo 'Tweaked' > /system/media/profile
@@ -1094,19 +968,19 @@ chmod 755 /system/etc/init.d/84fjwmin
 }
 
 918sleepmax() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '918000' > /system/etc/andrev_oc/sleep_max
 echo 'Tweaked' > /system/media/profile
 }
 
 918sleepmin() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '918000' > /system/etc/andrev_oc/sleep_min
 echo 'Tweaked' > /system/media/profile
 }
 
 918wakemax() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '918000' > /system/etc/andrev_oc/wake_max
 echo '918000' > /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
 echo 'Tweaked' > /system/media/profile
@@ -1116,7 +990,7 @@ chmod 755 /system/etc/init.d/84fjwmax
 }
 
 918wakemin() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '918000' > /system/etc/andrev_oc/wake_min
 echo '918000' > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
 echo 'Tweaked' > /system/media/profile
@@ -1126,19 +1000,19 @@ chmod 755 /system/etc/init.d/84fjwmin
 }
 
 972sleepmax() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '972000' > /system/etc/andrev_oc/sleep_max
 echo 'Tweaked' > /system/media/profile
 }
 
 972sleepmin() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '972000' > /system/etc/andrev_oc/sleep_min
 echo 'Tweaked' > /system/media/profile
 }
 
 972wakemax() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '972000' > /system/etc/andrev_oc/wake_max
 echo '972000' > /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
 echo 'Tweaked' > /system/media/profile
@@ -1148,7 +1022,7 @@ chmod 755 /system/etc/init.d/84fjwmax
 }
 
 972wakemin() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '972000' > /system/etc/andrev_oc/wake_min
 echo '972000' > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
 echo 'Tweaked' > /system/media/profile
@@ -1158,19 +1032,19 @@ chmod 755 /system/etc/init.d/84fjwmin
 }
 
 1134sleepmax() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '1134000' > /system/etc/andrev_oc/sleep_max
 echo 'Tweaked' > /system/media/profile
 }
 
 1134sleepmin() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '1134000' > /system/etc/andrev_oc/sleep_min
 echo 'Tweaked' > /system/media/profile
 }
 
 1134wakemax() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '1134000' > /system/etc/andrev_oc/wake_max
 echo '1134000' > /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
 echo 'Tweaked' > /system/media/profile
@@ -1180,7 +1054,7 @@ chmod 755 /system/etc/init.d/84fjwmax
 }
 
 1134wakemin() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '1134000' > /system/etc/andrev_oc/wake_min
 echo '1134000' > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
 echo 'Tweaked' > /system/media/profile
@@ -1190,19 +1064,19 @@ chmod 755 /system/etc/init.d/84fjwmin
 }
 
 1350sleepmax() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '1350000' > /system/etc/andrev_oc/sleep_max
 echo 'Tweaked' > /system/media/profile
 }
 
 1350sleepmin() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '1350000' > /system/etc/andrev_oc/sleep_min
 echo 'Tweaked' > /system/media/profile
 }
 
 1350wakemax() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '1350000' > /system/etc/andrev_oc/wake_max
 echo '1350000' > /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
 echo 'Tweaked' > /system/media/profile
@@ -1212,7 +1086,7 @@ chmod 755 /system/etc/init.d/84fjwmax
 }
 
 1350wakemin() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '1350000' > /system/etc/andrev_oc/wake_min
 echo '1350000' > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
 echo 'Tweaked' > /system/media/profile
@@ -1222,19 +1096,19 @@ chmod 755 /system/etc/init.d/84fjwmin
 }
 
 1512sleepmax() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '1512000' > /system/etc/andrev_oc/sleep_max
 echo 'Tweaked' > /system/media/profile
 }
 
 1512sleepmin() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '1512000' > /system/etc/andrev_oc/sleep_min
 echo 'Tweaked' > /system/media/profile
 }
 
 1512wakemax() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '1512000' > /system/etc/andrev_oc/wake_max
 echo '1512000' > /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
 echo 'Tweaked' > /system/media/profile
@@ -1244,7 +1118,7 @@ chmod 755 /system/etc/init.d/84fjwmax
 }
 
 1512wakemin() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo '1512000' > /system/etc/andrev_oc/wake_min
 echo '1512000' > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
 echo 'Tweaked' > /system/media/profile
@@ -1254,12 +1128,12 @@ chmod 755 /system/etc/init.d/84fjwmin
 }
 
 conservativesleep() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo 'conservative' > /system/etc/andrev_oc/sleep_gov
 }
 
 conservativewake() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo 'conservative' > /system/etc/andrev_oc/wake_gov
 echo 'conservative' > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
 rm -f /system/etc/init.d/84fj
@@ -1268,12 +1142,12 @@ chmod 755 /system/etc/init.d/84fjwgov
 }
 
 ondemandsleep() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo 'ondemand' > /system/etc/andrev_oc/sleep_gov
 }
 
 ondemandwake() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo 'ondemand' > /system/etc/andrev_oc/wake_gov
 echo 'ondemand' > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
 rm -f /system/etc/init.d/84fj
@@ -1282,12 +1156,12 @@ chmod 755 /system/etc/init.d/84fjwgov
 }
 
 performancesleep() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo 'performance' > /system/etc/andrev_oc/sleep_gov
 }
 
 performancewake() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo 'performance' > /system/etc/andrev_oc/wake_gov
 echo 'performance' > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
 rm -f /system/etc/init.d/84fj
@@ -1296,12 +1170,12 @@ chmod 755 /system/etc/init.d/84fjwgov
 }
 
 powersavesleep() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo 'powersave' > /system/etc/andrev_oc/sleep_gov
 }
 
 powersavewake() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo 'powersave' > /system/etc/andrev_oc/wake_gov
 echo 'powersave' > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
 rm -f /system/etc/init.d/84fj
@@ -1310,12 +1184,12 @@ chmod 755 /system/etc/init.d/84fjwgov
 }
 
 userspacesleep() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo 'userspace' > /system/etc/andrev_oc/sleep_gov
 }
 
 userspacewake() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 echo 'userspace' > /system/etc/andrev_oc/wake_gov
 echo 'userspace' > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
 rm -f /system/etc/init.d/84fj
@@ -1354,7 +1228,7 @@ wget "$URL"
 fi
 if [ "$GOOD" = "1" ]; then
 echo "Mounting File System"
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
   cd /sdcard/download/tmp
 echo "Extracting Package"
   tar -xzf svoice.tgz
@@ -1374,11 +1248,11 @@ else
 fi
 rm  /sdcard/download/tmp/$FILE
 rm -R /sdcard/download/tmp
-mount -o ro,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,ro /system
 
 if [ "$MK" = "1" ]; then
   rm -R /sdcard/download/tmp   
-mount -o ro,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,ro /system
 fi
 }
 
@@ -1408,7 +1282,7 @@ echo "Downloading Package Be Patient"
 fi
 if [ "$GOOD" = "1" ]; then
 echo "Mounting File System"
-  mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+  mount -o remount,rw /system
   mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p25 /data
   cd /
   rm -f /system/app/Swype.apk
@@ -1421,7 +1295,7 @@ cp -R system /
 cp Swype.apk /data/app/Swype.apk
 echo "Setting Permissions"
 chmod 644 /data/app/Swype.apk
-  mount -o ro,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+  mount -o remount,ro /system
   mount -o ro,remount -t yaffs2 /dev/block/mmcblk0p25 /data
   cd - >/dev/null 2>&1
   echo "Done! Enjoy Burakku Swype by fezzy102!"
@@ -1439,7 +1313,7 @@ fi
 }
 
 ocgpu() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 rm /system/etc/init.d/99gpuoc
 echo '#!/system/bin/sh
 echo '300000000' > /sys/devices/platform/kgsl-3d0.0/kgsl/kgsl-3d0/max_gpuclk
@@ -1448,11 +1322,11 @@ echo '228571000' > /sys/devices/platform/kgsl-2d1.1/kgsl/kgsl-2d1/max_gpuclk' > 
 chmod 777 /system/etc/init.d/99gpuoc
 /system/etc/init.d/99gpuoc
 echo "GPU Overclocked"
-mount -o ro,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,ro /system
 }
 
 noocgpu() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 rm /system/etc/init.d/99gpuoc
 echo '#!/system/bin/sh
 echo '266667000' > /sys/devices/platform/kgsl-3d0.0/kgsl/kgsl-3d0/max_gpuclk
@@ -1462,7 +1336,7 @@ chmod 777 /system/etc/init.d/99nogpuoc
 /system/etc/init.d/99nogpuoc
 rm /system/etc/init.d/99nogpuoc
 echo "GPU clock speeds set back to normal"
-mount -o ro,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,ro /system
 }
 
 poffice() {
@@ -1491,7 +1365,7 @@ echo "Downloading Package Be Patient"
 fi
 if [ "$GOOD" = "1" ]; then
 echo "Mounting File System"
-  mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+  mount -o remount,rw /system
   cd /
 cd /sdcard/tmp
 echo "Extracting Package"
@@ -1501,7 +1375,7 @@ cp -R system /
 echo "Setting Permissions"
 chmod 644 /system/app/PolarisOffice.apk
 chmod 644 /system/lib/libpolarisoffice.so
-  mount -o ro,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+  mount -o remount,ro /system
   cd - >/dev/null 2>&1
   echo "Done! Enjoy Polaris Office!"
 else
@@ -1516,7 +1390,7 @@ fi
 }
 
 fastcharge() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 rm /system/etc/init.d/98fastcharge
 echo '#!/system/bin/sh
 echo '1' > /sys/kernel/fast_charge/force_fast_charge' > /system/etc/init.d/98fastcharge
@@ -1525,11 +1399,11 @@ chmod 777 /system/etc/init.d/98fastcharge
 echo "Fast Charge Enabled"
 eco "* /sys/kernel/fast_charge/force_fast_charge"
 echo "*   1 - substitute AC to USB charging always"
-mount -o ro,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,ro /system
 }
 
 fastcharge2() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 rm /system/etc/init.d/98fastcharge
 echo '#!/system/bin/sh
 echo '2' > /sys/kernel/fast_charge/force_fast_charge' > /system/etc/init.d/98fastcharge
@@ -1538,11 +1412,11 @@ chmod 777 /system/etc/init.d/98fastcharge
 echo "Fast Charge Option 2 Enabled"
 echo "* /sys/kernel/fast_charge/force_fast_charge"
 echo "*   2 - substitute AC to USB charging only if no USB peripheral is detected"
-mount -o ro,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,ro /system
 }
 
 nofastcharge() {
-mount -o rw,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,rw /system
 rm /system/etc/init.d/98fastcharge
 echo '#!/system/bin/sh
 echo '0' > /sys/kernel/fast_charge/force_fast_charge' > /system/etc/init.d/98nofastcharge
@@ -1552,7 +1426,7 @@ rm /system/etc/init.d/98nofastcharge
 echo "Fast Charge Disabled"
 echo ":* /sys/kernel/fast_charge/force_fast_charge"
 echo "*   0 - disabled -default-"
-mount -o ro,remount -t yaffs2 /dev/block/mmcblk0p10 /system
+mount -o remount,ro /system
 }
 
 #### Main execution
