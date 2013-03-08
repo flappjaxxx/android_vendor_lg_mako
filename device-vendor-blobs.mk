@@ -178,3 +178,21 @@ PRODUCT_COPY_FILES += \
     vendor/lge/mako/proprietary/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/lge/mako/proprietary/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     vendor/lge/mako/proprietary/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so
+
+# Extras for The Unofficial
+PRODUCT_COPY_FILES += \
+    vendor/lge/mako/prebuilt/apps/Superuser.apk:system/app/Superuser.apk \
+    vendor/lge/mako/prebuilt/apps/SuperSUNoNag.apk:system/app/SuperSUNoNag.apk \
+    vendor/lge/mako/prebuilt/xbin/su:system/xbin/su \
+    vendor/lge/mako/prebuilt/xbin/busybox:system/xbin/busybox \
+    vendor/lge/mako/prebuilt/apps/Term.apk:system/app/Term.apk \
+    vendor/lge/mako/prebuilt/apps/QSCP.apk:system/app/QSCP.apk \
+    vendor/lge/mako/prebuilt/lib/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so \
+    vendor/lge/mako/prebuilt/etc/permissions/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml \
+    vendor/lge/mako/prebuilt/bin/fjtool:system/bin/fjtool
+
+# T-Mobile theme engine
+PRODUCT_PACKAGES += \
+       ThemeManager \
+       ThemeChooser \
+       com.tmobile.themes
